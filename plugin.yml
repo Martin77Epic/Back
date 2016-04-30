@@ -1,7 +1,9 @@
 name: Back
 main: Back\Back
 version: 1.0.0
-api: 1.0.0
+api: 
+[1.0.0]
+[2.0.0]
 load: STARTUP
 author: Martin77Epid
 description: Going to ur last Deathpoint
