@@ -1,5 +1,6 @@
 # Back
-Martin77Epic's  First Plugin
+Back Plugin
+Version 2.0
+Author: Martin77Epic
 
-#Wanna help ? 
-Make an Issues to fix my errors thx!
+For issues contact me on Discord Martin#6666
