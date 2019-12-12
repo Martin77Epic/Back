@@ -31,18 +31,22 @@ class Back extends PluginBase implements Listener{
 	 	
 	public function onCommand(CommandSender $sender, Command $command, $label, array $args){
 		switch($command->getName()){
-			case "Back":
+			case "back":
+				if ($sender->hasPermission("back.command")){
 				if($this->lastdeath[$sender->getName()] instanceof Position){
 					
 					$sender->teleport($this->lastdeath[$sender->getName()]);
 					$sender->sendMessage("§f§8[Back] Teleported to your last Death Postion.");
 					unset($this->lastdeath[$sender->getName()]);
 				}else{
-					$sender->sendMessage("§f§8[Back] You need this Command only in Survival Mode.");
+					$sender->sendMessage("§f§8[Back] To run this command you need to be in Survival Mode.");
 				}
 				break;
+					
 		}
+				
 	}
+}
 
 		public function onPlayerDeath(PlayerDeathEvent $event){	
 		$player = $event->getEntity();
