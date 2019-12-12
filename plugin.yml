@@ -1,20 +1,19 @@
 name: Back
 main: Back\Back
-version: 1.0.0
+version: 2.0
 api: 
-[1.0.0]
-[2.0.0]
+ [3.0.0]
 load: STARTUP
-author: Martin77Epid
+author: Martin77Epic
 description: Going to ur last Deathpoint
 website: http://github.com/Martin77Epic/Back
 commands:
  login:
   description: "Teleport to your last Death Postion"
   usage: "/back"
-  permission: martin77epic.back
+  permission: back.command
 
 permissions:
-   martin77epic.badk:
+   martin77epic.back:
     description: "Teleport to your last Death postion"
     default: true
